@@ -1,8 +1,8 @@
-import os
-import pickle
-import torchvision.transforms as transforms
-from torch.utils.data import Dataset, DataLoader, random_split
-from PIL import Image
+from . import os
+from . import pickle
+from . import transforms
+from . import Dataset, DataLoader, random_split
+from . import Image
 
 class FrameDataset(Dataset):
     def __init__(self, folder_name, key_filenames, between_filenames):
